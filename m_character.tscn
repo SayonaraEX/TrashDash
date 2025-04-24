@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://qy3qqj2qm6yw"]
+
+[ext_resource type="PackedScene" uid="uid://delgmaq2n63ub" path="res://Player/player.tscn" id="1_rwwlh"]
+[ext_resource type="Texture2D" uid="uid://brfa63oni1ue5" path="res://Player/Sprites/run.png" id="2_rwwlh"]
+
+[node name="MCharacter" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_rwwlh")]
+position = Vector2(0, -1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(192, 103)
+texture = ExtResource("2_rwwlh")
+hframes = 8
+vframes = 4
+frame = 3
